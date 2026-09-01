@@ -72,7 +72,7 @@ The app is a Flutter project — `flutter run` on your device/emulator, or build
 Finnrr's synced lyrics come from the **Finnrr Lyrics** server plugin. This works in *any* Jellyfin client (desktop Finnrr, web, mobile) — the plugin fills the server, clients display it.
 
 > [!NOTE]
-> The plugin repo (`CommanderBiz/finnrr-plugin-lyrics`) is currently **private**. To install it on a Jellyfin server you'll need to make it public (or host the `manifest.json` yourself), then:
+> The plugin repo (`CommanderBiz/finnrr-plugin-lyrics`) is **public** and ships an installable release (`v1.0.0.0`). Just add the repo and install — no extra steps needed:
 
 1. **Jellyfin 10.11.6 or newer.**
 2. If the old **LrcLib** plugin (`jellyfin-plugin-lrclib`) is installed, uninstall it and restart Jellyfin (this plugin also auto-marks it for removal on startup).
@@ -126,7 +126,7 @@ Finnrr is a personal fork of Finamp (GPL-3.0). The bulk of the app code is upstr
 ## Known Issues / Notes
 
 - The `redesign` branch is the actively-developed one; `main` is desktop-obsolete.
-- The plugin repo is private until we're ready to publish.
+- The plugin repo is public with an installable v1.0.0.0 release.
 - Branding (logo, store listings) is in progress — the app is currently named **Finnrr** in the UI but still ships with the upstream package identifiers (`com.unicornsonlsd.finamp`).
 
 ---
