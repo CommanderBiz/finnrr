@@ -1,210 +1,134 @@
-![Banner](./GitHub_Banner.png)
+# 🦁 Finnrr
 
-## Hacktoberfest
+**Finnrr** (Finamp → Finnrr) is a modern, open-source music player for [Jellyfin](https://jellyfin.org/), forked from [Finamp](https://github.com/jmshrv/finamp). It gives you a streaming-app experience (Spotify/Apple-Music-style) for the music you already own — with a focus on **Linux desktop** and tight integration with the **Finnrr Lyrics** Jellyfin plugin.
 
-Ever thought about contributing to Finamp or Open Source in general?
-Now is the time! It's Hacktober afterall!
+Finnrr = *Chaldean 23*, the Royal Star of the Lion.
 
-There are a lot of things **you** can help with with regard to Finamp:
-
-- Design Improvements
-  - Help us redesign some missing screens! We have some mockups to get you started, just ask around here on GitHub or on our [Discord Server](https://discord.gg/xh9SZ73jWk)!
-  - Fix visual bugs or improve the UI
-- Bug Hunting
-  - [Fixing bugs](https://github.com/jmshrv/finamp/issues?q=is%3Aissue%20state%3Aopen%20label%3Abug)
-  - Adding reproduction steps for existing bugs
-  - Finding bugs
-- Translations
-  - You can look at our [Weblate Project](https://hosted.weblate.org/engage/finamp/) to add missing translations
-  - You can also add descriptions (i.e., where that string appears in the app) to some older translations strings in [this file](https://github.com/jmshrv/finamp/blob/redesign/lib/l10n/app_en.arb)
-- Improving Documentation
-  - User Documentation (Was there anything you struggled with at first when using Finamp? How did you solve it?)
-  - Developer Documentation (Was there anything you struggled with when contribution code to Finamp? Add your solution to [CONTRIBUTING.md](https://github.com/jmshrv/finamp/blob/redesign/CONTRIBUTING.md))
-- Improving the codebase
-  - Optimizations (eg. Finamp currently consumes a lot of battery)
-  - Documentation
-  - Clean up
-- Support
-  - Help other people on our [Discord Server](https://discord.gg/xh9SZ73jWk)
-  - Give feedback on [Pull Requests](https://github.com/jmshrv/finamp/pulls)
-- Spread the word and get your friends to contribute :D
-
-If you like Finamp but don't want to contribute for any reason, you can also contribute [to Jellyfin directly](https://github.com/jellyfin/jellyfin) or to upstream libraries which Finamp uses ([`just_audio`](https://github.com/ryanheise/just_audio), [`background_downloader`](https://github.com/781flyingdutchman/background_downloader/), etc.).  
-That way you can help Finamp indirectly and Open Source as a whole!
-Finamp can't exists without maintained and stable libraries :)
-
-### What to do?
-
-There's still a lot left over from our latest "Finamplify" Hackathon!
-Take a look at the [Finamplify Project Board](https://github.com/users/jmshrv/projects/5) or even the full [Redesign Project Board](https://github.com/users/jmshrv/projects/2) (the latter is slightly outdated).  
-You can find an overview of (hopefully) easy to tackle issues [here on GitHub](https://github.com/jmshrv/finamp/issues?q=is%3Aissue%20state%3Aopen%20label%3A%22easy%20fix%22%20no%3Aassignee). For some of those prior programming experience is definitely helpful.
-
-Specifically, here a short list of long awaited features:
-
-- Car Play
-- Metadata editing
-- Multi user/server support
-- Various improvements for Finamp Desktop (Fixing shuffle, improved UI, better system integration)
-- Automatic (Widget) Tests
-
-### How to get started
-
->[!Important]
-> **Make sure to check out the `redesign` branch (`git checkout redesign`)! This is where all development happens at the moment!**
-
-Start by reading the ["Setting up a Development Environment" section](https://github.com/jmshrv/finamp/blob/redesign/CONTRIBUTING.md#setting-up-a-development-environment) in our contribution guidelines.  
-Then, once flutter is working, you can simply do `flutter run`!
-Any changes you do to the code can be applied via hot-reload by pressing `r` in the terminal. There are also first-party Flute integrations for many editors and IDEs.
-
-If you have any questions, just reach out to us on GitHub or [Discord](https://discord.gg/xh9SZ73jWk)!
+> [!IMPORTANT]
+> Linux desktop development happens on the **`redesign`** branch. The `main` branch has no Linux desktop support (upstream Finamp removed it) — for anything desktop-related, `git checkout redesign`.
 
 ---
 
-## Redesign Beta
+## What's different from upstream Finamp
 
-We're currently in the process of redesigning Finamp to transform it into a modern, beautiful, and feature-rich music player made specifically for Jellyfin.  
-You can join the beta on [Google Play](https://play.google.com/store/apps/details?id=com.unicornsonlsd.finamp) and [Apple TestFlight](https://testflight.apple.com/join/UqHTQTSs), or download the latest beta APK from the [releases page](https://github.com/jmshrv/finamp/releases).  
-Please note that the beta is still work-in-progress, so the UI and functionality might be inconsistent or incomplete, and is not final. However, the beta is **fully functional and should be stable** enough for daily use.
+This fork is built for **self-hosted desktop listening**:
+
+- 🖥️ **First-class Linux desktop** — native build via the `redesign` branch, with `media_kit`/libmpv audio (direct-play — FLAC stays FLAC), Impeller rendering, and a proper desktop window.
+- 🦁 **Finnrr Lyrics plugin** — the companion [Jellyfin lyrics plugin](https://github.com/CommanderBiz/finnrr-plugin-lyrics) that auto-syncs lyrics for newly added music after every library scan.
+- 📦 **One-command reproducible builds + portable AppImage** — see [LINUX_BUILD.md](LINUX_BUILD.md).
+- 🏠 **Modern Home screen** — quick actions, new arrivals, favorites (carried from the redesign branch).
 
 ---
 
-**Finamp** is a Jellyfin music player for Android and iOS. It's meant to give you a similar listening experience as traditional streaming services such as Spotify and Apple Music, but for the music that you already own. It's free, open-source software, just like Jellyfin itself.  
-Some of its features include:
+## The Finnrr stack
 
-- A welcoming user interface that looks modern & unique, but still familiar
-- Downloading files for offline listening and saving mobile data. Can use transcoded downloads to save even more space.
-- Transcoded streaming for saving mobile data
+| Component | Repo | What it does |
+|---|---|---|
+| **Finnrr app** | `CommanderBiz/finnrr` (this repo) | Jellyfin music player client (desktop, Android, iOS) |
+| **Finnrr Lyrics plugin** | `CommanderBiz/finnrr-plugin-lyrics` | Jellyfin server plugin: downloads synced lyrics from [lrclib.net](https://lrclib.net) + auto-syncs new music |
+
+---
+
+## Features
+
+- A welcoming UI that looks modern & unique, but still familiar
+- **Linux desktop** support (the focus of this fork) — native audio, no transcoding for common formats
 - Beautiful dynamic colors that adapt to your media
-- Audio volume normalization ("ReplayGain") (Jellyfin 10.9+)
-- Lyrics (Jellyfin 10.9+)
-- Gapless playback
-- Android Auto support (coming soon™)
-- Full support for Jellyfin's "Playback Reporting" feature and plugin, letting you keep track of your listening activity
-- Integration with [AudioMuse](https://github.com/NeptuneHub/AudioMuse-AI) for sonic analysis and improved mixes
+- Audio volume normalization (ReplayGain)
+- **Synced lyrics** (via the Finnrr Lyrics plugin) in the Now Playing screen
+- Downloading files for offline listening (mobile)
+- Full support for Jellyfin's Playback Reporting
+- AudioMuse integration for sonic analysis and improved mixes
 
-***You need your own Jellyfin server to use Finamp. If you don't have one yet, take a look at [Jellyfin's website](https://jellyfin.org/) to learn more about it and how to set it up.***
+***You need your own Jellyfin server.** If you don't have one, see [jellyfin.org](https://jellyfin.org/).*
 
-## Getting Finamp
+---
 
-<div style="display: flex; align-items: center;" align="center">
+## Installing / building
 
-[<img src="app-store-badges/fdroid.png"
-    alt="Get it on F-Droid"
-    height="80">](https://f-droid.org/packages/com.unicornsonlsd.finamp/)
+### Linux desktop (AppImage or build)
 
-[<img src="app-store-badges/play-store.png"
-    alt="Get it on Google Play"
-    height="80">](https://play.google.com/store/apps/details?id=com.unicornsonlsd.finamp)
+Prebuilt builds and AppImages are published from the `redesign` branch. To build from source:
 
-[<img style="margin-left: 15px;" src="app-store-badges/app-store.svg"
-    alt="Download on the App Store"
-    height="55">](https://apps.apple.com/us/app/finamp/id1574922594)
+```bash
+git clone git@github.com:CommanderBiz/finnrr.git
+cd finnrr
+git checkout redesign
+./build/build_linux.sh              # debug build
+BUILD=release ./build/build_linux.sh   # release build
+./build/build_appimage.sh           # package a portable AppImage (after release)
+```
 
-</div>
+Full prerequisites, gotchas, and docs are in **[LINUX_BUILD.md](LINUX_BUILD.md)** (Flutter ≥ 3.9, Rust, libmpv, etc.).
 
-<sup>Note: The F-Droid release may take a day or two to get updates because since [F-Droid only builds once a day](https://www.f-droid.org/en/docs/FAQ_-_App_Developers/#ive-published-a-new-release-why-is-it-not-in-the-repository).</sup>  
-The app is also available as an APK from the [releases page](https://github.com/jmshrv/finamp/releases).
+### Android / iOS
 
-### Community & Discussions
+The app is a Flutter project — `flutter run` on your device/emulator, or build an APK with `flutter build apk`. (Official store listings are planned once branding is finalized.)
 
-Have a simple question about Finamp, or struggling with setting up your Jellyfin correctly?  
-Just want someone to talk to and share your favorite music with?  
-Aside from using the [Issues](https://github.com/jmshrv/finamp/issues) and [Discussions](https://github.com/jmshrv/finamp/discussions) functionality here on GitHub, you could also **[join our Discord server](https://discord.gg/xh9SZ73jWk)!**  
-We post release notes and announcements there too, and you'll likely get a reply more quickly there compared to GitHub.
+---
 
-### Frequently Asked Questions
+## Setting up the Jellyfin Lyrics plugin
 
-#### Before Installing
+Finnrr's synced lyrics come from the **Finnrr Lyrics** server plugin. This works in *any* Jellyfin client (desktop Finnrr, web, mobile) — the plugin fills the server, clients display it.
 
-##### Is Finamp free?
+> [!NOTE]
+> The plugin repo (`CommanderBiz/finnrr-plugin-lyrics`) is currently **private**. To install it on a Jellyfin server you'll need to make it public (or host the `manifest.json` yourself), then:
 
-Absolutely! It costs nothing to use. We do appreciate voluntary contributions of any kind though, be that bug reports, code, designs, or ideas for new features. You can also donate to some of the developers to show your appreciation <3
+1. **Jellyfin 10.11.6 or newer.**
+2. If the old **LrcLib** plugin (`jellyfin-plugin-lrclib`) is installed, uninstall it and restart Jellyfin (this plugin also auto-marks it for removal on startup).
+3. **Add the plugin repository** to Jellyfin:
+   ```
+   https://raw.githubusercontent.com/CommanderBiz/finnrr-plugin-lyrics/master/manifest.json
+   ```
+4. **Plugin Catalog → Finnrr Lyrics** (Metadata category) → **Install** → restart Jellyfin.
+5. Run **Download and upgrade lyrics** once under Scheduled Tasks to backfill the library.
+6. **Scan all libraries.** Everything added afterwards gets lyrics **automatically** (auto-sync on scan).
 
-##### How can I install Finamp?
+### Plugin settings (defaults shown)
 
-On Android, Finamp can be installed from the Google Play Store, F-Droid store, or directly by installing the APK file from GitHub.  
-On iOS, you can install Finamp through Apple's App Store. Just click on the buttons above.
+| Setting | Default | What it does |
+|---|---|---|
+| Use strict search | off | Exact match only (artist + title) instead of fuzzy |
+| Exclude artist / album name | album off | Removes those from search parameters |
+| Filter matches by song length | on (15s tolerance) | Rejects lyrics whose duration differs too much |
+| Skip repeated misses | on | Backs off 1, 3, 7, 30 days for tracks with no lyrics online |
+| Limit work per run | on (2000) | Caps tracks checked per scheduled run |
+| **Auto-sync new music (Finnrr)** | **on (100)** | After each library scan, fetches lyrics for newest tracks missing them |
+| LRCLIB server URL | lrclib.net | Point at a self-hosted LRCLIB instance if you run one |
 
-##### Does Finamp support my media formats?
+---
 
-Finamp should support all formats supported by Jellyfin. Some more advanced formats could cause issues for regular playback, but transcoding should fix these issues.
+## FAQ
 
-##### Does Finamp support Android Auto / Apple CarPlay?
+##### Is Finnrr free?
 
-Theoretically, but not yet. There is [an issue for this](https://github.com/jmshrv/finamp/issues/24) that contains a proof of concept for Android Auto in there, but it hasn't been tested yet. Maybe you could help out!
+Yes. It's open-source software, like Jellyfin itself. It does not bundle any music — you bring your own library to your own Jellyfin server.
 
-##### Is Finamp legal?
+##### Which formats are supported?
 
-Yes. Finamp is a *tool* that lets you interface with a Jellyfin server. Finamp does not come with any music, and will not connect to streaming services other than Jellyfin. You will need to bring your own media and add it to Jellyfin, for example by purchasing music online. This often also directly supports your favorite artists!
+Everything your Jellyfin server supports. On desktop, common formats (FLAC, MP3, AAC, OGG, etc.) play in **direct-play** — no transcoding.
 
-#### After Installing
+##### How do I get help?
 
-##### I'm having trouble with Finamp, where can I find help?
+Open an issue on this repository. For plugin issues, open one on `CommanderBiz/finnrr-plugin-lyrics`.
 
-If you're experiencing software bugs or other issues with Finamp, be sure to take a look at [Finamp's issue tracker](https://github.com/jmshrv/finamp/issues), especially the pinned issues at the top of the page. If you can't find anything related to your specific problem, please create a new issue (you will need a GitHub account).
+---
 
 ## Contributing
 
-Finamp is a community-driven project and relies on people like **you** and their contributions. To learn how you could help out with making Finamp even better, take a look at our [Contribution Guidelines](CONTRIBUTING.md)
+Finnrr is a personal fork of Finamp (GPL-3.0). The bulk of the app code is upstream [Finamp](https://github.com/jmshrv/finamp) — huge thanks to its community. This fork adds the desktop focus, branding, and the lyrics plugin integration.
 
-### Translations
-
-You can also contribute by helping to translate Finamp! This is done through our Weblate instance here: <https://hosted.weblate.org/engage/finamp/>. The current translation status is this:
-
-<a href="https://hosted.weblate.org/engage/finamp/">
-  <img src="https://hosted.weblate.org/widget/finamp/finamp/horizontal-auto.svg" alt="Translation status" />
-</a>
-
-## Known Issues
-
-This app is still a work in progress, and has some bugs/issues that haven't been fixed yet. Here is a list of currently known issues:
-
-- Reordering the queue while shuffle is enabled is not possible at the moment. It seems like this is an issue with a dependency of Finamp (`just_audio`), and is being tracked [here](https://github.com/ryanheise/just_audio/issues/1042)
-- If you have a very large library or an older phone, performance might not be great in some places
-
-## Planned Features
-
-- Improved Android Auto / Apple CarPlay support
-- Full redesign, adding more features and a home screen. See [this issue](https://github.com/jmshrv/finamp/issues/220) for more info
-- Better playlist editing
-- Multiple users/servers
-- More customization options
-
-## Screenshots (Stable Version, outdated)
-
-| | |
-|:-------------------------:|:-------------------------:|
-|<img src=<https://raw.githubusercontent.com/jmshrv/finamp/master/fastlane/metadata/android/en-US/images/phoneScreenshots/1.png>> | <img src=<https://raw.githubusercontent.com/jmshrv/finamp/master/fastlane/metadata/android/en-US/images/phoneScreenshots/2.png>>
-| <img src=<https://raw.githubusercontent.com/jmshrv/finamp/master/fastlane/metadata/android/en-US/images/phoneScreenshots/3.png>> | <img src=<https://raw.githubusercontent.com/jmshrv/finamp/master/fastlane/metadata/android/en-US/images/phoneScreenshots/4.png>> |
-
-Name source: <https://www.reddit.com/r/jellyfin/comments/hjxshn/jellyamp_crossplatform_desktop_music_player/fwqs5i0/>
+- Code: fork, branch off `redesign`, open a PR.
+- The `main` branch is kept for upstream sync.
 
 ---
 
-## Info For Advanced Users
+## Known Issues / Notes
 
-### Dynamic Theming On Linux
+- The `redesign` branch is the actively-developed one; `main` is desktop-obsolete.
+- The plugin repo is private until we're ready to publish.
+- Branding (logo, store listings) is in progress — the app is currently named **Finnrr** in the UI but still ships with the upstream package identifiers (`com.unicornsonlsd.finamp`).
 
-On Linux, Finamp registers itself with the DBus system, which means you can send messages locally to Finamp!
-This system allows you keep Finamp's color theme up to date with your dynamic color theme without restarting the app.
-There are two color related "endpoints" you can call:
+---
 
-1. Reload the system accent color from GTK ([Settings > Layout & Theme > "Use System Accent"](https://intradeus.github.io/http-protocol-redirector?r=finamp://internal/settings/layout) needs to be *enabled*)
-```sh
-gdbus call \
-    --session \
-    --dest 'com.unicornsonlsd.FinampSettings' \
-    --object-path '/com/unicornsonlsd/Finamp' \
-    --method 'com.unicornsonlsd.Finamp.updateAccentColor'
-```
-
-2. Overwrite the accent color ([Settings > Layout & Theme > "Use System Accent"](https://intradeus.github.io/http-protocol-redirector?r=finamp://internal/settings/layout) needs to be *disabled*)  
-  Only works when Finamp is running.
-```sh
-gdbus call \
-    --session \
-    --dest 'com.unicornsonlsd.FinampSettings' \
-    --object-path '/com/unicornsonlsd/Finamp' \
-    --method 'com.unicornsonlsd.Finamp.setAccentColor' \
-    '#ff0000' # you can also send "default" to clear the accent color
-```
+*Name origin: Finamp → Finnrr (Chaldean 23, the Royal Star of the Lion). Original name source: [r/jellyfin](https://www.reddit.com/r/jellyfin/comments/hjxshn/jellyamp_crossplatform_desktop_music_player/fwqs5i0/).*
