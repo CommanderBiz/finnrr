@@ -3,21 +3,21 @@
     "@finampTagline": {
         "description": "Tagline / short description for the app"
     },
-    "aboutContributionLink": "Prispevaj k Finamp na GitHub:",
+    "aboutContributionLink": "Prispevaj k Finnrr na GitHub:",
     "@aboutContributionLink": {
-        "description": "Link to the Finamp GitHub repository, shown in the about screen."
+        "description": "Link to the Finnrr GitHub repository, shown in the about screen."
     },
-    "finamp": "Finamp",
+    "finamp": "Finnrr",
     "@finamp": {
         "description": "App name, possibly translated"
     },
-    "about": "O Finamp",
+    "about": "O Finnrr",
     "@about": {
         "description": "Label for the about/info button on the settings screen"
     },
     "loginFlowWelcomeHeading": "Dobrodošli v",
     "@loginFlowWelcomeHeading": {
-        "description": "Greeting shown on the login screen. The full message will be 'Welcome to Finamp'."
+        "description": "Greeting shown on the login screen. The full message will be 'Welcome to Finnrr'."
     },
     "loginFlowSlogan": "Tvoja glasba, kakor si jo želiš.",
     "@loginFlowSlogan": {

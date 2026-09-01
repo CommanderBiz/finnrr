@@ -486,7 +486,7 @@
     },
     "aboutContributionLink": "GitHub पर फ़िनएम्प के लिए योगदान करें:",
     "@aboutContributionLink": {
-        "description": "Link to the Finamp GitHub repository, shown in the about screen."
+        "description": "Link to the Finnrr GitHub repository, shown in the about screen."
     },
     "aboutReleaseNotes": "नवीनतम रिलीज़ नोट्स पढ़ें:",
     "@aboutReleaseNotes": {
@@ -506,7 +506,7 @@
     },
     "loginFlowWelcomeHeading": "{styledName}स्वागत है,",
     "@loginFlowWelcomeHeading": {
-        "description": "Greeting shown on the login screen. The full message will be 'Welcome to Finamp'."
+        "description": "Greeting shown on the login screen. The full message will be 'Welcome to Finnrr'."
     },
     "changeLanguage": "भाषा बदलें",
     "@changeLanguage": {

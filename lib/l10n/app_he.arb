@@ -7,7 +7,7 @@
     "@startupErrorTitle": {
         "description": "The title for the error screen that shows when startup fails."
     },
-    "about": "אודות Finamp",
+    "about": "אודות Finnrr",
     "@about": {
         "description": "Label for the about/info button on the settings screen"
     },
@@ -15,19 +15,19 @@
     "@aboutContributionPrompt": {
         "description": "Text shown in the about screen, explaining that the app is made by volunteers and that the user could be one of them."
     },
-    "aboutContributionLink": "תרמו לFinamp בGithub:",
+    "aboutContributionLink": "תרמו לFinnrr בGithub:",
     "@aboutContributionLink": {
-        "description": "Link to the Finamp GitHub repository, shown in the about screen."
+        "description": "Link to the Finnrr GitHub repository, shown in the about screen."
     },
     "aboutReleaseNotes": "קראו את הערות של הגרסא האחרונה:",
     "@aboutReleaseNotes": {
         "description": "Link to the release notes, shown in the about screen."
     },
-    "aboutTranslations": "עזרו לתרגם את Finamp לשפה שלכם:",
+    "aboutTranslations": "עזרו לתרגם את Finnrr לשפה שלכם:",
     "@aboutTranslations": {
         "description": "Link to the translation project, shown in the about screen."
     },
-    "aboutThanks": "תודה לכם שאתם משתמשים בFinamp!",
+    "aboutThanks": "תודה לכם שאתם משתמשים בFinnrr!",
     "@aboutThanks": {
         "description": "Thank you message shown in the about screen."
     },
@@ -37,7 +37,7 @@
         "placeholders": {
             "styledName": {
                 "type": "String",
-                "example": "Finamp"
+                "example": "Finnrr"
             }
         }
     },
@@ -216,7 +216,7 @@
     "dark": "כהה",
     "useMonochromeIcon": "השתמש בלוגו שחור לבן",
     "@useMonochromeIcon": {
-        "description": "Toggles the Finamp icon between classic and it being monochromic. This does not change the outside-app-icon"
+        "description": "Toggles the Finnrr icon between classic and it being monochromic. This does not change the outside-app-icon"
     },
     "defaultWord": "ברירת מחדל",
     "save": "שמירה",
@@ -310,7 +310,7 @@
     "@playbackSpeedDecreaseLabel": {
         "description": "Label for the button in the speed menu that decreases the playback speed."
     },
-    "finamp": "Finamp",
+    "finamp": "Finnrr",
     "@finamp": {
         "description": "App name, possibly translated"
     },
@@ -391,29 +391,29 @@
     "@preferAddingToFavoritesOverPlaylistsTitle": {
         "description": "Title for the setting that swaps the default behavior of short- vs. long-press on the heart/favorite icon"
     },
-    "discordRPCIconWhiteTransparent": "Finamp לבן - שקוף",
+    "discordRPCIconWhiteTransparent": "Finnrr לבן - שקוף",
     "@discordRPCIconWhiteTransparent": {
-        "description": "A REALLY short description of the icon in use. Its format is 'ICON, BACKGROUND'. This one is the full white Finamp logo with a Transparent Background"
+        "description": "A REALLY short description of the icon in use. Its format is 'ICON, BACKGROUND'. This one is the full white Finnrr logo with a Transparent Background"
     },
-    "discordRPCIconTransparent": "Finamp - שקוף",
+    "discordRPCIconTransparent": "Finnrr - שקוף",
     "@discordRPCIconTransparent": {
-        "description": "A REALLY short description of the icon in use. Its format is 'ICON, BACKGROUND'. This one is the Finamp logo with a Transparent Background"
+        "description": "A REALLY short description of the icon in use. Its format is 'ICON, BACKGROUND'. This one is the Finnrr logo with a Transparent Background"
     },
     "discordRPCIconJFTransparent": "Jellyfin - שקוף",
     "@discordRPCIconJFTransparent": {
         "description": "A REALLY short description of the icon in use. Its format is 'ICON, BACKGROUND'. This one is the Jellyfin logo with a Transparent Background"
     },
-    "discordRPCIconLight": "Finamp - לבן",
+    "discordRPCIconLight": "Finnrr - לבן",
     "@discordRPCIconLight": {
-        "description": "A REALLY short description of the icon in use. Its format is 'ICON, BACKGROUND'. This one is the Finamp logo with a White Background"
+        "description": "A REALLY short description of the icon in use. Its format is 'ICON, BACKGROUND'. This one is the Finnrr logo with a White Background"
     },
-    "discordRPCIconBlack": "Finamp - שחור",
+    "discordRPCIconBlack": "Finnrr - שחור",
     "@discordRPCIconBlack": {
-        "description": "A REALLY short description of the icon in use. Its format is 'ICON, BACKGROUND'. This one is the Finamp logo with a Black Background"
+        "description": "A REALLY short description of the icon in use. Its format is 'ICON, BACKGROUND'. This one is the Finnrr logo with a Black Background"
     },
-    "discordRPCIconDark": "Finamp - כהה",
+    "discordRPCIconDark": "Finnrr - כהה",
     "@discordRPCIconDark": {
-        "description": "A REALLY short description of the icon in use. Its format is 'ICON, BACKGROUND'. This one is the Finamp logo with the Dark-Theme Background"
+        "description": "A REALLY short description of the icon in use. Its format is 'ICON, BACKGROUND'. This one is the Finnrr logo with the Dark-Theme Background"
     },
     "startupErrorWorkaround": "כפתרון זמני לתקלה אפשר לנקות את נתוני האפליקציה כדי לאפס את האפליקציה. חשוב לדעת שבמקרה הזה כל ההגדרות וההורדות שלך יימחקו.",
     "@startupErrorWorkaround": {
@@ -531,7 +531,7 @@
     "@libraryDownloads": {
         "description": "Title for the library downloads section on the downloads screen."
     },
-    "noMusicLibrariesBody": "Finamp לא הצליח למצוא ספריות מוזיקה. בבקשה תוודאו שהשרת Jellyfin שלכם כולל לפחות ספרייה אחת עם סוג התוכן מוגדר ל\"מוסיקה\".",
+    "noMusicLibrariesBody": "Finnrr לא הצליח למצוא ספריות מוזיקה. בבקשה תוודאו שהשרת Jellyfin שלכם כולל לפחות ספרייה אחת עם סוג התוכן מוגדר ל\"מוסיקה\".",
     "downloadLibraryPrompt": "האם להוריד את כל התוכן של הספרייה \"{libraryName}\"?",
     "@downloadLibraryPrompt": {
         "description": "Confirmation prompt before downloading entire library, which may be large.",
@@ -660,7 +660,7 @@
     },
     "useMonochromeIconSubtitle": "זה רק משפיע על הסמל בתוך האפליקציה, לא על סמל המשגר.",
     "@useMonochromeIconSubtitle": {
-        "description": "Subtitle for the toggle that switches the Finamp icon between classic and it being monochromic."
+        "description": "Subtitle for the toggle that switches the Finnrr icon between classic and it being monochromic."
     },
     "useDefaultButton": "איפוס לצבע הדגשה ברירת מחדל",
     "colorCode": "קוד צבע (Hex)",
@@ -866,7 +866,7 @@
     "@reportQueueToServer": {
         "description": "Label for the setting that toggles reporting of the current queue to the Jellyfin server"
     },
-    "reportQueueToServerSubtitle": "כאשר מופעל, Finamp יישלח את התור הנוכחי לשרת. זה יכול לשפר שליטה מרחוק ומאפשר שחזור של התור מצד השרת. תמיד מופעל אם האפשרות 'נגן על' מופעלת.",
+    "reportQueueToServerSubtitle": "כאשר מופעל, Finnrr יישלח את התור הנוכחי לשרת. זה יכול לשפר שליטה מרחוק ומאפשר שחזור של התור מצד השרת. תמיד מופעל אם האפשרות 'נגן על' מופעלת.",
     "@reportQueueToServerSubtitle": {
         "description": "Description of the setting that toggles reporting of the current queue to the Jellyfin server"
     },
@@ -895,7 +895,7 @@
         }
     },
     "shuffleAllTrackCount": "כמות ערבוב כל רצועות השמע",
-    "playbackSpeedControlSettingDescription": "אוטומטי:\nFinamp ינסה לזהות אם הרצועת שמע שמנוגנת הינה פודקאסט או (חלק מ…) ספר קולי. זה נחשב לכך אם הרצועת שמע ארוכה מ{trackDuration} דקות, אם האלבום של הרצועת שמע ארוך מ{albumDuration} שעות, או אם לרצועת שמע יש את אחד מהז'אנרים האלו מוגדרים: {genreList}\nבמצב כזה השליטה במהירות הנגינה תופיעה בתפריט מסך הנגן.\n\nמוצג:\nהשליטה במהירות הנגינה תמיד תופיעה בתפריט מסך הנגן.\n\nמוסתר:\nהשליטה במהירות הנגינה אף פעם לא תופיעה בתפריט מסך הנגן.",
+    "playbackSpeedControlSettingDescription": "אוטומטי:\nFinnrr ינסה לזהות אם הרצועת שמע שמנוגנת הינה פודקאסט או (חלק מ…) ספר קולי. זה נחשב לכך אם הרצועת שמע ארוכה מ{trackDuration} דקות, אם האלבום של הרצועת שמע ארוך מ{albumDuration} שעות, או אם לרצועת שמע יש את אחד מהז'אנרים האלו מוגדרים: {genreList}\nבמצב כזה השליטה במהירות הנגינה תופיעה בתפריט מסך הנגן.\n\nמוצג:\nהשליטה במהירות הנגינה תמיד תופיעה בתפריט מסך הנגן.\n\nמוסתר:\nהשליטה במהירות הנגינה אף פעם לא תופיעה בתפריט מסך הנגן.",
     "@playbackSpeedControlSettingDescription": {
         "description": "Description for the dropdown that selects the replay gain mode, shown in a dialog that opens when the user presses the info icon next to the dropdown",
         "placeholders": {
@@ -1544,7 +1544,7 @@
     "@playOnStaleDelaySubtitle": {
         "description": "Description of the setting that controls how long a PlayOn remote session is considered active"
     },
-    "enablePlayonSubtitle": "מפעיל את האפשרות 'נגן על' של Jellyfin (שליטה מרחוק הFinamp מלקוח אחר). יש לבטל את זה אם הreverse proxy או השרת לא תומכים בwebsockets.",
+    "enablePlayonSubtitle": "מפעיל את האפשרות 'נגן על' של Jellyfin (שליטה מרחוק הFinnrr מלקוח אחר). יש לבטל את זה אם הreverse proxy או השרת לא תומכים בwebsockets.",
     "@enablePlayonSubtitle": {
         "description": "Description of the setting to enable Jellyfin's 'Play On' feature (remote control)"
     },
@@ -2327,7 +2327,7 @@
     "@autoReloadQueueTitle": {
         "description": "Title for the setting that controls if the queue is automatically reloaded when the source changes"
     },
-    "autoReloadQueueSubtitle": "טוען מחדש את התור אוטומטים כשהמקור משתנה (למשל בהפעלת מצב לא מקוון או בשינוי כתובת שרת). אם מבוטל, Finamp יודיע על כך במקום.",
+    "autoReloadQueueSubtitle": "טוען מחדש את התור אוטומטים כשהמקור משתנה (למשל בהפעלת מצב לא מקוון או בשינוי כתובת שרת). אם מבוטל, Finnrr יודיע על כך במקום.",
     "@autoReloadQueueSubtitle": {
         "description": "Subtitle for the setting that controls if the queue is automatically reloaded when the source changes"
     },
@@ -2563,7 +2563,7 @@
     "@serverSharingMenuButtonTitle": {
         "description": "Title for the button in the drawer that opens the server sharing menu"
     },
-    "serverSharingMenuConfirmationDialogText": "האם להפעיל שיתוף שרת למרות שמצב לא מקוון פועל? זה יגרום לFinamp לשלוח מידע דרך הרשת המקומית.",
+    "serverSharingMenuConfirmationDialogText": "האם להפעיל שיתוף שרת למרות שמצב לא מקוון פועל? זה יגרום לFinnrr לשלוח מידע דרך הרשת המקומית.",
     "@serverSharingMenuConfirmationDialogText": {
         "description": "Dialog text shown when enabling server sharing while offline mode is enabled"
     },
@@ -2627,7 +2627,7 @@
     "@quickConnectAuthorizationMenuStateSubtitleFailed": {
         "description": "Subtitle for the quick connect authorization menu state info (above the input field) when the authorization was unsuccessful"
     },
-    "quickConnectAuthorizationMenuDescription": "אם אתם מנסים להתחבר לתוכנת לקוח של Jellyfin נוספת דרך חיבור-מהיר, אתם יכולים להקליד או להדביק את הקוד באורך 6 ספרות לשדה למעלה. זה יאשר את בקשת החיבור של תוכנת הלקוח האחרת, ויחבר אתכם לאותו משתמש שמחובר לFinamp.",
+    "quickConnectAuthorizationMenuDescription": "אם אתם מנסים להתחבר לתוכנת לקוח של Jellyfin נוספת דרך חיבור-מהיר, אתם יכולים להקליד או להדביק את הקוד באורך 6 ספרות לשדה למעלה. זה יאשר את בקשת החיבור של תוכנת הלקוח האחרת, ויחבר אתכם לאותו משתמש שמחובר לFinnrr.",
     "@quickConnectAuthorizationMenuDescription": {
         "description": "Description for the quick connect authorization menu, shown at the bottom"
     },
@@ -2866,11 +2866,11 @@
     "@androidGainDisabled": {
         "description": "Message presented when the android gain effect fallback is enabled after an error occurs."
     },
-    "serverSharingMenuDetails": "זה עובד על ידי הקשבה לבקשות גילוי השרת על ידי תוכנות לקוח אחרות על הרשת המקומית, ומשיב לבקשות אלו עם הכתובת המוגדרת של השרת Jellyfin.\nאם הגדרתם גם כתובת מקומית וגם כתובת ציבורית, Finamp יספק את שניהם לתוכנת לקוח המבקשת.",
+    "serverSharingMenuDetails": "זה עובד על ידי הקשבה לבקשות גילוי השרת על ידי תוכנות לקוח אחרות על הרשת המקומית, ומשיב לבקשות אלו עם הכתובת המוגדרת של השרת Jellyfin.\nאם הגדרתם גם כתובת מקומית וגם כתובת ציבורית, Finnrr יספק את שניהם לתוכנת לקוח המבקשת.",
     "@serverSharingMenuDetails": {
         "description": "Description text shown in the server sharing menu, below the description"
     },
-    "missingBlurhashWarning": "אזהרה: נראה שהשרת Jellyfin לא מוגדר נכון והוא לא מחשב blurhashes.  זה מונע מFinamp למנוע כפילויות של תמונות בהורדה.  נא לתקן את השרת ולהריץ תיקון הורדות.",
+    "missingBlurhashWarning": "אזהרה: נראה שהשרת Jellyfin לא מוגדר נכון והוא לא מחשב blurhashes.  זה מונע מFinnrr למנוע כפילויות של תמונות בהורדה.  נא לתקן את השרת ולהריץ תיקון הורדות.",
     "@missingBlurhashWarning": {
         "description": "A warning message displayed on the downloads screen if the jellyfin server is missing blurhashes."
     },
@@ -3035,8 +3035,8 @@
     "@lookingForSomethingElse": {
         "description": "Header for home screen customization button"
     },
-    "builtWithByTheFinampContributors": "נבנה עם ♥ על ידי התורמים של Finamp.",
-    "@builtWithByTheFinampContributors": {
+    "builtWithByTheFinnrrContributors": "נבנה עם ♥ על ידי התורמים של Finnrr.",
+    "@builtWithByTheFinnrrContributors": {
         "description": "Message in home screen footer"
     },
     "showAll": "הצג הכל",
@@ -3410,13 +3410,13 @@
     },
     "libraryQualifierActive": "פעיל",
     "@libraryQualifierActive": {
-        "description": "Label shown next to the currently selected library in the Finamp menu/drawer"
+        "description": "Label shown next to the currently selected library in the Finnrr menu/drawer"
     },
     "voiceSearch": "חיפוש קולי",
     "@voiceSearch": {
         "description": "Heading for the page that prompts the user to perform a voice search."
     },
-    "carPlayLoginPrompt": "יש לפתוח את אפליקציית Finamp בטלפון שלך כדי להתחבר לשרת Jellyfin שלך.",
+    "carPlayLoginPrompt": "יש לפתוח את אפליקציית Finnrr בטלפון שלך כדי להתחבר לשרת Jellyfin שלך.",
     "@carPlayLoginPrompt": {
         "description": "Label shown when the user is trying to use CarPlay without being logged in."
     },
@@ -3536,7 +3536,7 @@
     "@alreadyRandomized": {
         "description": "Tooltip for shuffle button on home screen sections using a random sort order, where it is disabled due to being unneeded"
     },
-    "carPlaySiriHint": "יש להגיד ״היי Siri, אני רוצה לשמוע את [רצועת שמע/אמן/אלבום] בFinamp״",
+    "carPlaySiriHint": "יש להגיד ״היי Siri, אני רוצה לשמוע את [רצועת שמע/אמן/אלבום] בFinnrr״",
     "@carPlaySiriHint": {
         "description": "Hint text for how to use Siri to search in CarPlay."
     },
